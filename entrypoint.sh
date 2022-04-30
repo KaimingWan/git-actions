@@ -5,7 +5,7 @@ echo "#################################################"
 echo "Starting the git Action"
 
 # avoid error fatal: unsafe repository ('/github/workspace' is owned by someone else)
-git config --global --add safe.directory /*
+git config --global --add safe.directory '*'
 
 sh -c "$*"
 
